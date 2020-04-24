@@ -1,0 +1,35 @@
+{
+  "name": "ts-algo",
+  "version": "1.0.0",
+  "description": "Exercising implementing common types of algorithms in Typescript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.2",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilsoncav/ts-algo.git"
+  },
+  "keywords": [
+    "typescript",
+    "algorithms"
+  ],
+  "author": "Gilson Cavalcanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilsoncav/ts-algo/issues"
+  },
+  "homepage": "https://github.com/gilsoncav/ts-algo#readme"
+}
