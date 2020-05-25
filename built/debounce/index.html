@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounce tester</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Debouncer tester</h1>
+    <div>
+      <h2 class='raw-counter'>0</h2>
+      <h2 class='debounced-counter'>0</h2>
+    </div>
+  </div>
+
+  <script type="module">
+    import debounce from './debounce.js';
+
+    const $rawCounter = document.querySelector('.raw-counter');
+    const $debouncedCounter = document.querySelector('.debounced-counter');
+    let rawCounter = 0;
+    let debouncedCounter = 0;
+
+    window.addEventListener('wheel', () => {
+      rawCounter++;
+      $rawCounter.textContent = rawCounter;
+    });
+
+    window.addEventListener('wheel', debounce(() => {
+      debouncedCounter++;
+      $debouncedCounter.textContent = debouncedCounter;
+    }, 400));
+  </script>
+</body>
+</html>
