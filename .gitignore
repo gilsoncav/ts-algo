@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Typescript built folder
-built/
+built/**/*.js
